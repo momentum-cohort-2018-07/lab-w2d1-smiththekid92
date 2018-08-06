@@ -19,16 +19,37 @@ function greeting(name){
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not.
 
-// 5. Create a function called isEven that, given a number, will
+function isOdd (number) {
+    if (number % 2 === 1 || number % 2 === -1){
+        return true}
+    else {return false
+    } 
+}
+
+// 5. Create a function callerd isEven that, given a number, will
 // return true if it is even and false if it is not.
+
+function isEven (number) {
+    if (number % 2 === 0 || number % 2 === -1){
+        return true
+    } else {return false}
+}
 
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
 
+function fahrenheitToCelsius (temperature) {
+    return (temperature - 32) /1.8
+} fahrenheitToCelsius (32)
+
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
+
+function fahrenheitToCelsius (temperature) {
+    return (temperature - 32) /1.8
+} fahrenheitToCelsius (32)
 
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -57,4 +78,4 @@ function greeting(name){
 // date (the "current date") and returns how many years old the person
 // with that birthdate was on that date. The dates should be JavaScript
 // Date objects.
-// If the birth date is after than the current date, return nothing.
+// If the birth date is after than the current date, return nothing
