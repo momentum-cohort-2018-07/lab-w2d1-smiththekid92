@@ -1,39 +1,39 @@
 // 1. Set the variable `givenName` to the string "Addison".
 
-var givenName = "Addison"
+var givenName = "Addison";
 
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
 
-// var candies = 20
-// var people = 6
-// var leftover = (candies % people)
+var candies = 20
+var people = 6
+var leftover = (candies % people)
 
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
 
-// function greeting(name){
-//     return ("Hello, " + name + "!")
-// } 
+function greeting(name){
+    return ("Hello, " + name + "!")
+} 
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not.
 
-// function isOdd (number) {
-//     if (number % 2 === 1 || number % 2 === -1){
-//         return true}
-//     else {return false
-//     } 
-// }
+function isOdd (number) {
+    if (number % 2 === 1 || number % 2 === -1){
+        return true}
+    else {return false
+    } 
+}
 
 // 5. Create a function callerd isEven that, given a number, will
 // return true if it is even and false if it is not.
 
-// function isEven (number) {
-//     if (number % 2 === 0 || number % 2 === -1){
-//         return true
-//     } else {return false}
-// }
+function isEven (number) {
+    if (number % 2 === 0 || number % 2 === -1){
+        return true
+    } else {return false}
+}
 
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -104,3 +104,19 @@ function multigreeting(name, language){
 // with that birthdate was on that date. The dates should be JavaScript
 // Date objects.
 // If the birth date is after than the current date, return nothing
+
+//find the difference between birthdate and current date
+//convert milliseconds to years
+//round milliseconds down to nearest whole number **use math.floor function
+
+    var birthdate = Date.parse('2018-01') //1533608685927 in milliseconds
+    var current = Date.parse('2018-08-06') //1533608634965 in milliseconds
+    var yearBefore = Date.parse('2017-01') //1533609333337 in milliseconds
+function howOld(birthhdate, current){
+    if (howOld === current - birthdate) {
+        return howOld
+    } else {
+        return false
+    }
+    
+}
